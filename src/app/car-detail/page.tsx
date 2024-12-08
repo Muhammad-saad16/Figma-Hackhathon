@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Star, Heart } from 'lucide-react'
-import { FaHeart } from "react-icons/fa"
 import Link from 'next/link'
 
 interface FilterOption {
@@ -156,9 +155,7 @@ const reviews: Review[] = [
 function CarCard({ car }: { car: Car }) {
   return (
     <div className="shadow-md overflow-hidden rounded-lg cursor-pointer hover:-translate-y-2 transition-all relative bg-white">
-      <button className="text-[#ED3F3F] w-11 h-10 flex items-center justify-center absolute top-3 right-3">
-        <Heart className="w-6 h-6" />
-      </button>
+      
 
       <div className="flex items-center justify-between px-4 pt-4">
         <div>
@@ -356,9 +353,7 @@ export default function Page() {
                   <span className="ml-2 text-sm text-gray-600">440+ Reviewer</span>
                 </div>
               </div>
-              <button className="px-3 py-1 border border-gray-300 rounded-md text-sm hover:bg-gray-100 transition-colors">
-                <FaHeart color="red"/>
-              </button>
+              
             </div>
 
             <p className="text-gray-600">
